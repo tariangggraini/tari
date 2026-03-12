@@ -1,0 +1,295 @@
+/* =====================
+   RESET
+===================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* =====================
+   BODY
+===================== */
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#3c2415;
+    color:#3c2415;
+    line-height:1.8;
+    padding:40px;
+}
+
+/* =====================
+   CONTAINER
+===================== */
+.container{
+    max-width:900px;
+    margin:40px auto;
+    background:#fdfce8;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 0 10px rgba(255,255,255,0.5);
+}
+
+/* =====================
+   MAIN LAYOUT
+===================== */
+.main-layout{
+    display:flex;
+    gap:40px;
+    align-items:flex-start;
+}
+
+/* =====================
+   SIDEBAR
+===================== */
+.sidebar{
+    width:220px;
+    background:#a18c7b;
+    padding:20px;
+    border-radius:12px;
+    position:sticky;
+    top:20px;
+    height:fit-content;
+    box-shadow:0 0 10px rgba(68,51,5,0.6);
+}
+
+.sidebar h2{
+    text-align:center;
+    color:white;
+    margin-bottom:15px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    margin-bottom:10px;
+}
+
+.sidebar a{
+    display:block;
+    background:#3c2415;
+    color:white;
+    text-decoration:none;
+    padding:10px;
+    border-radius:8px;
+    transition:0.25s;
+}
+
+.sidebar a:hover{
+    background:#5a3a25;
+    transform:translateX(5px);
+}
+
+/* =====================
+   CONTENT
+===================== */
+.content{
+    flex:1;
+}
+
+/* =====================
+   PROFIL
+===================== */
+.profil-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:20px;
+    padding:30px;
+    background:#a18c7b;
+    border-radius:12px;
+    color:white;
+    margin-top:20px;
+    box-shadow:0 0 10px rgba(68,51,5,0.6);
+}
+
+.foto{
+    display:flex;
+    justify-content:center;
+}
+
+.foto img{
+    width:200px;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(60,36,21,0.6);
+    transition:0.3s;
+}
+
+.foto img:hover{
+    transform:scale(1.05);
+}
+
+.biodata{
+    max-width:600px;
+}
+
+.biodata p{
+    margin-bottom:10px;
+    text-align:justify;
+}
+
+/* =====================
+   SECTION BOX
+===================== */
+.data-pribadi,
+.hobi,
+.pendidikan,
+.keterampilan,
+.pengalaman,
+.pencapaian,
+.kontak,
+.sosmed{
+    background:#a18c7b;
+    padding:30px;
+    border-radius:12px;
+    margin-top:20px;
+    color:white;
+    box-shadow:0 0 10px rgba(68,51,5,0.6);
+}
+
+.sosmed{
+    text-align:center;
+}
+
+/* =====================
+   CONTACT FORM
+===================== */
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    margin-top:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #a18c7b;
+    font-size:14px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.contact-form textarea{
+    resize:none;
+}
+
+.contact-form button{
+    background:#3c2415;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    transition:0.3s;
+}
+
+.contact-form button:hover{
+    background:#5a3a25;
+}
+
+/* =====================
+   LINK
+===================== */
+a{
+    color:#3c2415;
+}
+
+a:hover{
+    color:#fdfce8;
+}
+
+.pencapaian a{
+    margin-left:8px;
+    font-size:18px;
+    text-decoration:none;
+}
+
+.pencapaian a:hover{
+    opacity:0.7;
+}
+
+/* =====================
+   TABLE
+===================== */
+.jadwal{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 0 10px rgba(68,51,5,0.6);
+}
+
+.jadwal th{
+    background:#3c2415;
+    color:white;
+    padding:12px;
+}
+
+.jadwal td{
+    padding:12px;
+    border:1px solid #a18c7b;
+    text-align:center;
+}
+
+.jadwal tr:nth-child(even){
+    background:white;
+}
+
+/* =====================
+   TEXT
+===================== */
+h1{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+h2{
+    margin-top:30px;
+}
+
+p,ul,ol,table{
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media(max-width:768px){
+
+.main-layout{
+    flex-direction:column;
+}
+
+.sidebar{
+    width:100%;
+}
+
+.profil-container{
+    flex-direction:column;
+    align-items:center;
+}
+
+.foto img{
+    width:160px;
+    height:auto;
+}
+
+.container{
+    padding:20px;
+}
+
+}
